@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/meiqia-service/goods-service/goods-service.iml" filepath="$PROJECT_DIR$/meiqia-service/goods-service/goods-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-service/meeting-service/meeting-service.iml" filepath="$PROJECT_DIR$/meiqia-service/meeting-service/meeting-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia.iml" filepath="$PROJECT_DIR$/meiqia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-api/meiqia-api.iml" filepath="$PROJECT_DIR$/meiqia-api/meiqia-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-service/meiqia-service.iml" filepath="$PROJECT_DIR$/meiqia-service/meiqia-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-sso/meiqia-sso.iml" filepath="$PROJECT_DIR$/meiqia-sso/meiqia-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-web/meiqia-web.iml" filepath="$PROJECT_DIR$/meiqia-web/meiqia-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-zcommon/meiqia-zcommon.iml" filepath="$PROJECT_DIR$/meiqia-zcommon/meiqia-zcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-zregister/meiqia-zregister.iml" filepath="$PROJECT_DIR$/meiqia-zregister/meiqia-zregister.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-service/order-service/order-service.iml" filepath="$PROJECT_DIR$/meiqia-service/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-service/system-service/system-service.iml" filepath="$PROJECT_DIR$/meiqia-service/system-service/system-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiqia-service/user-service/user-service.iml" filepath="$PROJECT_DIR$/meiqia-service/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>

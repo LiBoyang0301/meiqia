@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.lby.meiqia.order.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.lby.meiqia.order.entity.Order">
+        <result column="order_id" property="orderId" />
+        <result column="user_id" property="userId" />
+        <result column="price" property="price" />
+        <result column="consignee" property="consignee" />
+        <result column="phone" property="phone" />
+        <result column="product_details" property="productDetails" />
+        <result column="num" property="num" />
+        <result column="status" property="status" />
+        <result column="payment" property="payment" />
+        <result column="create_time" property="createTime" />
+        <result column="pay_time" property="payTime" />
+        <result column="type" property="type" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_id, user_id, price, consignee, phone, product_details, num, status, payment, create_time, pay_time, type
+    </sql>
+
+</mapper>

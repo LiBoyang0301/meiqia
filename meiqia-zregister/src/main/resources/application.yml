@@ -1,0 +1,26 @@
+server:
+  #服务端口
+  port: 10001
+spring:
+  application:
+    ## 应用名称，会在Eureka中作为服务的id标识（serviceId）
+    name: meiqia-eureka
+eureka:
+  instance:
+    #实例（客户端）的主机名
+    hostname: eureka-10001
+  client:
+    #是否将当前微服务注册到Eureka服务中。自己是注册中心，因此无需注册。
+    register-with-eureka: false
+    #是否从Eureka中获取注册信息。自己是注册中心，因此无需获取。
+    fetch-registry: false
+    #Eureka客户端与Eureka服务端进行交互的地址Map表
+    service-url:
+      # EurekaServer的地址，现在是自己的地址，如果是集群，需要写其它Server的地址。
+      # defaultZone: http://localhost:10087/eureka/,http://localhost:10088/eureka/
+      defaultZone: http://localhost:10001/eureka/
+  server:
+    # 服务失效剔除时间间隔，默认60秒 eureka服务定时扫描失效的服务，把失效的服务剔除
+    eviction-interval-timer-in-ms: 6000
+    # 关闭自我保护模式（默认是true,打开的）
+    #enable-self-preservation: false

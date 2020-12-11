@@ -1,0 +1,44 @@
+#端口号
+server:
+  port: 8084
+#mybatis-plus
+spring:
+  application:
+    # 应用的名字，该名字会被注册到注册中心，而且，该名字也是集群名字
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/meiqia?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    username: root
+    password: root
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml #指定mapper.xml位置
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #输出sql日志
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler #枚举转换器
+
+#Eureka配置
+eureka:
+  client:
+    # 注册中心服务地址，你要向哪个注册中心注册
+    service-url:
+      #defaultZone: http://localhost:10086/eureka/,http://localhost:10087/eureka/,http://localhost:10088/eureka/
+      defaultZone: http://localhost:10001/eureka/
+      #当前应用是否注册到Eureka注册中心（默认就是true，因此无需配置）
+      #register-with-eureka: true
+      #是否向Eureka注册中心拉取服务列表（默认就是true，因此无需配置）
+      #fetch-registry: true
+      #向注册中心拉取列表的时间间隔（默认是30秒）
+      registry-fetch-interval-seconds: 3
+  instance:
+    #续约(租期更新)心跳的间隔时间（默认30秒）
+    lease-renewal-interval-in-seconds: 3
+    #服务失效(租期到期)时间 如果从前一次发送心跳时间起，90秒没接受到新的心跳，将剔除服务（默认90秒）
+    lease-expiration-duration-in-seconds: 9
+    #更倾向于使用ip，而不是host名，会注册本机所有的ip,默认是false使用主机名来注册。
+    prefer-ip-address: true
+    #ip地址 固定上报一个IP地址给eureka server，缺点只注册指定的
+    #ip-address: 127.0.0.1
+    # 控制台status值 影响负载均衡
+    #instance-id: user-service

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/meiqia-service/goods-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meiqia-service/meeting-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meiqia-service/order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meiqia-service/system-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meiqia-service/user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meiqia-sso/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meiqia-zcommon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/meiqia-zregister/src/main/java" charset="UTF-8" />
+  </component>
+</project>
